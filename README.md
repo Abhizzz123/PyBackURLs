@@ -6,7 +6,7 @@ PyBackURLs is a powerful and flexible Python-based tool designed to extract arch
 
 ---
 
-## Features
+# Features
 
 <h1 align="left">
   <img src="static/main.png" alt="pybackurl" width="700px"></a>
@@ -27,12 +27,11 @@ PyBackURLs is a powerful and flexible Python-based tool designed to extract arch
 
 ---
 
-## Installation
+# Installation
 
-### Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
-- Git (optional, for cloning the repo)
 
 ### Steps
 
