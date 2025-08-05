@@ -8,6 +8,11 @@ PyBackURLs is a powerful and flexible Python-based tool designed to extract arch
 
 ## Features
 
+<h1 align="left">
+  <img src="static/main.png" alt="pybackurl" width="700px"></a>
+  <br>
+</h1>
+
 - Asynchronously fetches URLs from multiple archival sources for speed and coverage
 - Advanced filtering options:
   - Include/exclude by file extension
