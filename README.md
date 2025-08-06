@@ -34,7 +34,7 @@ PyBackURLs is a powerful Python tool that extracts archived URLs from the Waybac
 - Python **3.8** or higher
 
 ```yaml
-git clone https://github.com/YourUsername/PyBackURLs.git
+git clone https://github.com/Abhizzz123/PyBackURLs.git
 cd PyBackURLs
 pip install -r requirements.txt
 ```
