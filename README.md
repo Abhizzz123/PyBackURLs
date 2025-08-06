@@ -78,6 +78,12 @@ Helpmenu:
 
 # Usage Examples
 
+
+<h1 align="left">
+  <img src="static/example.png" alt="pybackurl" width="700px"></a>
+  <br>
+</h1>
+
 - **Fetch URLs for a domain**:
 ```console
 python pybackurls.py example.com
