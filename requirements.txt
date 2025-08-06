@@ -1,0 +1,6 @@
+# requirements.txt
+aiohttp>=3.8.0
+rich>=13.0.0
+asyncio-throttle>=1.0.0
+python-dateutil>=2.8.0
+
