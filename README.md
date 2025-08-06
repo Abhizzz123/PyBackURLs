@@ -2,7 +2,7 @@
 
 **Python-based URL Harvester and Recon Tool**
 
-PyBackURLs is a powerful and flexible Python-based tool designed to extract archived URLs from the Wayback Machine, Common Crawl, and VirusTotal. It serves as a modern alternative to the popular Go-based waybackurls utility, with enhanced filtering, smart URL cleaning, and integrated recon highlights for bug bounty hunters and OSINT researchers.
+PyBackURLs is a powerful Python tool that extracts archived URLs from the Wayback Machine, Common Crawl, and VirusTotal. A modern alternative to the Go-based waybackurls utility, it features enhanced filtering, smart URL cleaning, and recon highlights for bug bounty and OSINT gathering.
 
 ---
 
@@ -31,46 +31,31 @@ PyBackURLs is a powerful and flexible Python-based tool designed to extract arch
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python **3.8** or higher
 
-### Steps
-
-1. Clone the repository:
-
+```yaml
 git clone https://github.com/YourUsername/PyBackURLs.git
 cd PyBackURLs
-
-text
-
-2. (Optional) Create and activate a virtual environment:
-
-python3 -m venv venv
-source venv/bin/activate # On Windows use venv\Scripts\activate
-
-text
-
-3. Install the Python dependencies:
-
 pip install -r requirements.txt
+```
 
-text
-
----
 
 ## Usage
 
 Run the tool from the command line:
-
+```yaml
 python pybackurls.py [options] domain1.com domain2.com ...
-
-text
+```
 
 ### Common Options
+
+```yaml
+Helpmenu:
 
 | Option                   | Description                                                   |
 |--------------------------|---------------------------------------------------------------|
 | `--include-subs`         | Include subdomains of target domains                           |
-| `--format`               | Output format: `txt` (default), `json`, `csv`, or `html`       |
+| `--format`               | Output format- `txt` (default), `json`, `csv`, or `html`       |
 | `--output`, `-o`         | Output filename (default is auto-generated in `out/` folder)  |
 | `--threads`              | Number of concurrent threads (default 50)                      |
 | `--extensions`           | Only include URLs with these comma-separated file extensions   |
@@ -84,52 +69,46 @@ text
 | `--show-stats`           | Show harvesting statistics                                     |
 | `--interactive`          | Run in interactive mode for manual domain input                |
 | `-h`, `--help`           | Show the help message with all available options               |
-
+```
 ---
 
-## Examples
+# Usage Examples
 
-Fetch URLs for a domain:
-
+- **Fetch URLs for a domain**:
+```console
 python pybackurls.py example.com
+```
 
-text
-
-Include subdomains and output JSON:
-
+- **Include subdomains and output JSON**:
+```console
 python pybackurls.py example.com --include-subs --format json -o example_urls.json
+```
 
-text
-
-Filter to only JavaScript and PHP files, minimum URL length 20, and show stats:
-
+- **Filter to only JavaScript and PHP files, minimum URL length 20, and show stats**:
+```console
 python pybackurls.py example.com --extensions js,php --minlen 20 --show-stats
+```
 
-text
-
-Exclude URLs containing "logout" or "signup":
-
+- **Exclude URLs containing "logout" or "signup":**
+```console
 python pybackurls.py example.com --exclude logout,signup
+```
 
-text
-
-Fetch URLs within a date range:
-
+- **Fetch URLs within a date range:**
+```console
 python pybackurls.py example.com --start-date 2020-01-01 --end-date 2023-12-31
+```
 
-text
-
-Run analysis and show recon highlights:
-
+- **Run analysis and show recon highlights:**
+```console
 python pybackurls.py example.com --analyze --show-stats
-
-text
+```
 
 ---
 
 ## Output
 
-By default, results are saved to the `out/` directory with timestamped filenames.
+By default, results are saved to the `result/` directory with timestamped filenames.
 
 Formats supported:
 
@@ -155,8 +134,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-Developed by [Your Name] - [your.email@example.com]  
-GitHub: [https://github.com/YourUsername/PyBackURLs](https://github.com/YourUsername/PyBackURLs)
+Developed by Abhishek - josephinevincent4@gmail.com 
 
 ---
 
