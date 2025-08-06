@@ -32,7 +32,11 @@ PyBackURLs is a powerful Python tool that extracts archived URLs from the Waybac
 ## Prerequisites
 
 - Python **3.8** or higher
-
+- Create virtual python environment (optional)
+  ```console
+  python3 -m venv .venv
+  ```
+---
 ```yaml
 git clone https://github.com/Abhizzz123/PyBackURLs.git
 cd PyBackURLs
